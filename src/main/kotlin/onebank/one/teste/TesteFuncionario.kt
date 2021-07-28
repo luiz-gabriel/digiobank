@@ -3,7 +3,7 @@ package main.kotlin.onebank.one.teste
 import main.kotlin.onebank.one.Funcionario
 import main.kotlin.onebank.one.Pessoa
 import java.math.BigDecimal
-
+/*
 fun main()
 {
     val joao = Pessoa("João","999-999-999-99")
@@ -16,4 +16,4 @@ fun main()
     println(jether.nome)
     println(jether.cpf)
     println(jether.salario)
-}
+}*/

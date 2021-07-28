@@ -3,9 +3,17 @@ package main.kotlin.onebank.one
 import java.math.BigDecimal
 
 abstract class Funcionario(
-    val nome:String,
-    val cpf:String,
-    val salario: BigDecimal
+    nome:String,
+    cpf:String,
+    val salario: Double
 ): Pessoa(nome,cpf) {
-    abstract fun calculaAuxilio();
+    protected abstract fun calculaAuxilio(): Double
+
+    override fun toString(): String = """
+    Nome: $nome
+    Cpf: $cpf
+    Salario: $salario
+    Auxilio: ${calculaAuxilio()}
+""".trimIndent()
 }
+
